@@ -10,6 +10,7 @@
 </body>
 <script type="module">
   import { parse } from './index.min.js'
+  import * as fs from 'fs'
   const data = fs.readFileSync('./dates.csv', 'utf8')
   $(function () {
     $('#CSVTable').parse(data);
